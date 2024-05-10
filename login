@@ -26,7 +26,7 @@ if(isset($_POST['login'])) {
 
     if($stmt->rowCount() > 0) {
         // Đăng nhập thành công, chuyển hướng người dùng đến trang "sach.php"
-        header("Location: ../View/sach.php");
+        header("Location:sach.php");
         exit(); // Dừng script để đảm bảo không có mã HTML nào khác được thực thi
     } else {
         echo "Tên đăng nhập hoặc mật khẩu không đúng!";
